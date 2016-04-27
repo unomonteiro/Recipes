@@ -37,5 +37,12 @@ public class MainActivity extends AppCompatActivity
     public void onListRecipeSelected(int index) {
         // clm.10
         Toast.makeText(MainActivity.this, Recipes.names[index], Toast.LENGTH_SHORT).show();
+
+        // clm.19 replacing one fragment with another is similar
+        ViewPagerFragment fragment = new ViewPagerFragment();
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.placeHolder, fragment);
+        fragmentTransaction.commit();
     }
 }
