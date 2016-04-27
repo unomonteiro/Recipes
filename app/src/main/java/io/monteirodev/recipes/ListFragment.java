@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+// extends LoggingFragment to debug lifecycle
 public class ListFragment extends Fragment {
 
     // clm .8 implementing click inside fragment
@@ -20,9 +22,9 @@ public class ListFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Log.d(LoggingFragment.TAG, "onCreateView");
         // clm.10
         OnRecipeSelectedInterface listener = (OnRecipeSelectedInterface) getActivity();
-
 
         // return super.onCreateView(inflater, container, savedInstanceState);
         // this method will create and add to viewGroup
