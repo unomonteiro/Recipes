@@ -18,4 +18,4 @@ public class GridAdapter extends RecyclerAdapter {
     protected void onRecipeSelected(int index) {
         mListener.onGridRecipeSelected(index);
     }
-}}
+}
