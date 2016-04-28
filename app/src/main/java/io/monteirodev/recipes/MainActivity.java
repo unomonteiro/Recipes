@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity
         //Toast.makeText(MainActivity.this, isTablet +"", Toast.LENGTH_SHORT).show();
 
 
-        if (isTablet){
+        if (!isTablet){
             // clm.17 avoid fragment onCreate copy
             // search, if not find by id create new one
             // clm.21 change getFragmentManager to getSupportFragmentManager()
