@@ -36,11 +36,12 @@ public class ViewPagerFragment extends Fragment {
 
         // clm.27 adding viewPager with two fragments
         final IngredientsFragment ingredientsFragment = new IngredientsFragment();
+        final DirectionsFragment directionsFragment = new DirectionsFragment();
         // clm.30 bundling indexes
         Bundle bundle = new Bundle();
         bundle.putInt(KEY_RECIPE_INDEX, index);
         ingredientsFragment.setArguments(bundle); // .30
-        final DirectionsFragment directionsFragment = new DirectionsFragment();
+        directionsFragment.setArguments(bundle);
         // FragmentPagerAdapter requires a fragmentManager
         // we pass in getChildFragmentManager() when using fragments within fragments
         ViewPager viewPager = (ViewPager) view.findViewById(R.id.viewPager);
