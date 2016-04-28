@@ -9,7 +9,6 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 
 public class ViewPagerFragment extends Fragment {
@@ -18,7 +17,6 @@ public class ViewPagerFragment extends Fragment {
     // Fragment#setArguments(Bundle) instead more... (Ctrl+F1)
     // public ViewPagerFragment(int index){}
     public static final String KEY_RECIPE_INDEX = "recipe_index";
-
 
     // clm.18
     @Nullable
@@ -36,11 +34,14 @@ public class ViewPagerFragment extends Fragment {
 
         // clm.27 adding viewPager with two fragments
         final IngredientsFragment ingredientsFragment = new IngredientsFragment();
-        final DirectionsFragment directionsFragment = new DirectionsFragment();
         // clm.30 bundling indexes
         Bundle bundle = new Bundle();
         bundle.putInt(KEY_RECIPE_INDEX, index);
-        ingredientsFragment.setArguments(bundle); // .30
+       ingredientsFragment.setArguments(bundle); // .30
+        final DirectionsFragment directionsFragment = new DirectionsFragment();
+        bundle = new Bundle();
+        bundle.putInt(KEY_RECIPE_INDEX, index);
+
         directionsFragment.setArguments(bundle);
         // FragmentPagerAdapter requires a fragmentManager
         // we pass in getChildFragmentManager() when using fragments within fragments
