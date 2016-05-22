@@ -1,5 +1,5 @@
 # Recipes
-Recipes app for phones and tablets.
+Recipes app built for phones and tablets.
 
 <table>
   <tr>
