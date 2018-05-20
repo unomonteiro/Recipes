@@ -19,4 +19,4 @@ Recipes app built for phones and tablets.
 * ViewPager
 * Fragment
 
-<a href='https://play.google.com/store/apps/details?id=io.monteirodev.doodle'><img alt='Get it on Google Play' src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="200"/></a>
+<a href='https://play.google.com/store/apps/details?id=io.monteirodev.recipes'><img alt='Get it on Google Play' src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="200"/></a>
